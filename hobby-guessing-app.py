@@ -28,6 +28,12 @@ dancing2 = input("I like learning different dances.")
 
 dancing3 = input("I enjoy creating choreography for different songs.")
 
+singing1 = input("I enjoy singing in the shower.")
+
+singing2 = input("I feel like singing along whenever I hear songs that I know being played.")
+
+singing3 = input("Singing makes me feel euphoric.")
+
 craft_final = int(craft1) + int(craft2) + int(craft3)
 cooking_final = int(cooking1) + int(cooking2) + int(cooking3)
 music_final = int(music1)+ int(music2) + int(music3)
@@ -35,11 +41,13 @@ dancing_final = int(dancing1) + int(dancing2) + int(dancing3)
 
 print()
 
-if craft_final > cooking_final and craft_final > music_final and craft_final > dancing_final:
+if craft_final > cooking_final and craft_final > music_final and craft_final > dancing_final> singing_final:
   print("We think that you like craft work!")
-elif cooking_final > music_final and cooking_final > dancing_final:
+elif cooking_final > music_final and cooking_final > dancing_final > singing_final:
   print("We think that you enjoy cooking!")
-elif music_final > dancing_final:
+elif music_final > dancing_final > singing_final:
   print("We think that you enjoy playing musical instruments!")
-else:
+eif dancing_final > singing_final:
   print("We think that your hobby is dancing!")
+else:
+  print("We think that your hooby is singing!")
